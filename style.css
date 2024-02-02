@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F0F2F5;
+    padding: 20px;
+}
+#main .create{
+    width: 500px;
+    height: 123px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 12px 16px 10px;
+    border-radius: 8.5px;
+    /* box-shadow: 0 -0px 3px #aaacaf; */
+    border: 1px solid #dfe3e9;
+    border-bottom: 2px solid #dfe3e9;
+}
+.create .cr-top{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #dfe3e9;
+    padding-bottom: 10px;
+}
+.cr-top .cr-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    background: url(https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-1/343411139_780724986779923_2501367089849092783_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=5740b7&_nc_eui2=AeE62xbzho5AA6J-Dy83nv2NYOpmhOxP0ehg6maE7E_R6KDzn0YKwRo536eJ1yN8823XqyBtdzKTlDu_LktJxObl&_nc_ohc=LvKg2yMYv2sAX89rbo1&_nc_ht=scontent-ams2-1.xx&oh=00_AfBmyxnQPKsmToLX8JR4ikhZdco00b0JCkgFmmndlm56Lw&oe=65C0CAEE);
+    background-size: cover;
+    background-position: center;
+    /* background-color: #fff; */
+}
+.cr-top input{
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #E4E6E9;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cr-top input:hover{
+    background-color: #dfe3e9;
+}
+.cr-top input::placeholder{
+    color: #929497;
+}
+.create .cr-bottom{
+    height: 50%;
+    width: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cr-bottom .box{
+    height: 40px;
+    width: 30%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: ease;
+}
+.cr-bottom .box:hover{
+    background-color: #E4E6E9;
+    border-radius: 5px;
+}
+.box img{
+    height: 25px;
+}
+.box p{
+    color: #aaacaf;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+.posting{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f49a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: 0.3s;
+}
+.posting .box{
+    width: 500px;
+    height: 428px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaacaf;
+    padding: 0 15px;
+}
+.box .top{
+    height: 15%;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top h3{
+    width: 90%;
+    text-align: center;
+    font-weight: 900;
+}
+.posting .box .top i{
+    font-size: 25px;
+    color: #70767D;
+    background-color: #D8DADF;
+    padding: 10px;
+    border-radius: 50%;
+    /* margin-left: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.posting .second{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+}
+.second .circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    background: url(https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-1/343411139_780724986779923_2501367089849092783_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=5740b7&_nc_eui2=AeE62xbzho5AA6J-Dy83nv2NYOpmhOxP0ehg6maE7E_R6KDzn0YKwRo536eJ1yN8823XqyBtdzKTlDu_LktJxObl&_nc_ohc=LvKg2yMYv2sAX89rbo1&_nc_ht=scontent-ams2-1.xx&oh=00_AfBmyxnQPKsmToLX8JR4ikhZdco00b0JCkgFmmndlm56Lw&oe=65C0CAEE);
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+}
+.second .name{
+    width: 23%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+.name select{
+    width: 95%;
+    height: 48%;
+    /* padding: 5px 0; */
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #E4E6EB;
+}
+.box textarea{
+    width: 100%;
+    height: 45%;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    /* background-color: aliceblue; */
+    /* background-image: url(https://images.unsplash.com/photo-1683009427692-8a28348b0965?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom; */
+}
+.box .third{
+    height: 13%;
+    width: 100%;
+    border: 1px solid #D8DADF;
+    border-bottom: 2px solid #D8DADF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+.third .label{
+    height: 100%;
+    width: 50%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.label p{
+    color: #000;
+}
+.third .icons{
+    height: 100%;
+    width: 50%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icons label input{
+    display: none;
+}
+.icons i, .icons img{
+    cursor: pointer;
+}
+.box button{
+    width: 100%;
+    height: 8%;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    cursor: not-allowed;
+    /* pointer-events: none; */
+    background-color: #E4E6EB;
+    color: #BCC0C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.post-card{
+    width: 500px;
+    height: fit-content;
+    /* height: fit-content; */
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #dfe3e9;
+    border-bottom: 2px solid #dfe3e9;
+    margin: 15px auto;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.post-card .card-first{
+    height: 46.4px;
+    width: 100%;
+    /* background-color: lightblue;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-first .left{
+    height: 100%;
+    width: 50%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+}
+.card-first .right{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+.card-first .right i{
+    cursor: pointer;
+    color: #aaacaf;
+    margin: 0 5px;
+}
+.card-first .left .circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    background: url(https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-1/343411139_780724986779923_2501367089849092783_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=5740b7&_nc_eui2=AeE62xbzho5AA6J-Dy83nv2NYOpmhOxP0ehg6maE7E_R6KDzn0YKwRo536eJ1yN8823XqyBtdzKTlDu_LktJxObl&_nc_ohc=LvKg2yMYv2sAX89rbo1&_nc_ht=scontent-ams2-1.xx&oh=00_AfBmyxnQPKsmToLX8JR4ikhZdco00b0JCkgFmmndlm56Lw&oe=65C0CAEE);
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+}
+.left .details{
+    height: 100%;
+    width: 40%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+}
+.details h4{
+    font-weight: 550;
+}
+.details p{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color: #aaacaf;
+}
+.details p i:nth-child(1){
+    font-size: 3px;
+    margin: 0 5px;
+}
+.card-second{
+    width: 100%;
+    height: 40%;
+    padding: 15px;
+    /* background-color: aliceblue; */
+}
+.card-second p{
+    /* margin: 15px 0; */
+}
+.post-card .card-third{
+    height: 45px;
+    width: 100%;
+    border-top: 1px solid #BCC0C4;
+    border-bottom: 1px solid #BCC0C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-third button{
+    height: 75%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.card-third button:hover{
+    background-color: #dfe3e9;
+}
+.card-image{
+    width: 100%;
+}
+.card-image img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}

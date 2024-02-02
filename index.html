@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="posting" class="posting">
+        <div class="box">
+            <div class="top">
+                <h3>Create post</h3>
+                <i onclick="closeDiv()" class="ri-close-fill"></i>
+            </div>
+            <div class="second">
+                <div class="circle"></div>
+                <div class="name">
+                    <h4>Abdul Moiz</h4>
+                    <select> 
+                      <option value="Public">Public</option>
+                      <option value="Private">Private</option>
+                      <option value="Friends">Friends</option>
+                    </select>
+                </div>
+            </div>
+            <textarea id="text" oninput="btnFunc()" placeholder="What's on your mind, Moiz?"></textarea>
+            <div class="third">
+                <div class="label">
+                    <p>Add to your post</p>
+                </div>
+                <div class="icons">
+                    <label for="image-inp">
+                        <img id="img-icon" class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png?_nc_eui2=AeEoxTRDaVc-Zt1lwsmI_yoFPL4YoeGsw5I8vhih4azDkpwmGoYcMfOLubfjHFCAgqFOaSm061f8-ccJmxGxYtCq" alt="" style="height: 24px; width: 24px;">
+                        <input id="image-inp" type="file" accept="image/*">
+                    </label>
+                    <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/b37mHA1PjfK.png?_nc_eui2=AeE4d2BjKalFHYeXgP_KuriHohqwRjkkxMOiGrBGOSTEwxep2i-4xYE8xZUiV0UQj2hJC12T_GmgsTBdcK5jKEJA" alt="" style="height: 24px; width: 24px;">
+                    <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png?_nc_eui2=AeFXHCUGfMdPw6f2Wmwr3KdVvPIN-OmHLJy88g346YcsnNn2V-tgF9Tqde6Wtro75n3sGKC8YlOUC2rG94ao6CzY" alt="" style="height: 24px; width: 24px;">
+                    <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/8zlaieBcZ72.png?_nc_eui2=AeHiTlkyjMhmNtPtcZRe323t88Ps36vvyGDzw-zfq-_IYK0jMalo50P6IHHooIErK4K7W_qXdTbj0c_lEOjT80G4" alt="" style="height: 24px; width: 24px;">
+                    <img class="x1b0d499 xl1xv1r" src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/q7MiRkL7MLC.png?_nc_eui2=AeFFizsejXwxI7b_MkRVrs_xJTqz5hgP3TklOrPmGA_dOXTHZz2zFLoAjjKhWD0Oj2o7cCTHp5tmPTaJteBXzAxm" alt="" style="height: 24px; width: 24px;">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xl1xv1r" style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/6lkWl0BZTu-.png?_nc_eui2=AeELV7RwXI6W8E1VwgxVuMa88dTwxjBSBT7x1PDGMFIFPhN6IsWih6xqFeyRhqJ_I6Pf5bhu0wVO2O0_xonOcE7Z&quot;); background-position: 0px -37px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+            </div>
+            <button id="btn" onclick="createPostCard()">Post</button>
+        </div>
+    </div>
+    <div id="main">
+        <div class="create">
+            <div class="cr-top">
+                <div class="cr-image"></div>
+                <input type="text" placeholder="What's on your mind, Moiz?" onclick="openDiv()">
+            </div>
+            <div class="cr-bottom">
+                <div class="box box1">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/c0dWho49-X3.png?_nc_eui2=AeGbX8d52GwLsYmsOtnitfWNVnUPE18ZZ-dWdQ8TXxln52modrOUM0zKRG2htOphwxmcjoqUye_o8covZe6IfFUn" alt="">
+                    <p>Live video</p>
+                </div>
+                <div class="box box2">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png?_nc_eui2=AeEoxTRDaVc-Zt1lwsmI_yoFPL4YoeGsw5I8vhih4azDkpwmGoYcMfOLubfjHFCAgqFOaSm061f8-ccJmxGxYtCq" alt="">
+                    <p>Photo/video</p>
+                </div>
+                <div class="box box3">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png?_nc_eui2=AeFXHCUGfMdPw6f2Wmwr3KdVvPIN-OmHLJy88g346YcsnNn2V-tgF9Tqde6Wtro75n3sGKC8YlOUC2rG94ao6CzY" alt="">
+                    <p>Feeling/activity</p>
+                </div>
+            </div>
+        </div>
+        <div id="post-container"></div>
+        <!-- <div class="post-card">
+            <div class="card-first">
+                <div class="left">
+                    <div class="circle"></div>
+                    <div class="details">
+                            <h4>Abdul Moiz</h4>
+                           <p>Just now <i class="ri-circle-fill"></i><i class="ri-earth-fill"></i></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xl1xv1r" style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/6lkWl0BZTu-.png?_nc_eui2=AeELV7RwXI6W8E1VwgxVuMa88dTwxjBSBT7x1PDGMFIFPhN6IsWih6xqFeyRhqJ_I6Pf5bhu0wVO2O0_xonOcE7Z&quot;); background-position: 0px -37px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+            <div id="card-text" class="card-second"></div>
+            <div id="card-image" class="card-image"></div>
+            <div class="card-third">
+                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/Ima_pXlhqeL.png?_nc_eui2=AeFt9Rxlh5-AJHSdPF0wHUhKJgpGdu_r-TsmCkZ27-v5O2IPcTOkn8MNph6ImUzK2qcXoIOY6Ul2dRrLCqKG9hsk&quot;); background-position: 0px -760px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Like</button>
+                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/Ima_pXlhqeL.png?_nc_eui2=AeFt9Rxlh5-AJHSdPF0wHUhKJgpGdu_r-TsmCkZ27-v5O2IPcTOkn8MNph6ImUzK2qcXoIOY6Ul2dRrLCqKG9hsk&quot;); background-position: 0px -571px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Comment</button>
+                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/Ima_pXlhqeL.png?_nc_eui2=AeFt9Rxlh5-AJHSdPF0wHUhKJgpGdu_r-TsmCkZ27-v5O2IPcTOkn8MNph6ImUzK2qcXoIOY6Ul2dRrLCqKG9hsk&quot;); background-position: 0px -907px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Share</button>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
