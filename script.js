@@ -45,7 +45,7 @@ function createPostCard() {
                 </div>
                 <div class="right">
                     <i data-visualcompletion="css-img" class="x1b0d499 xl1xv1r" style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/6lkWl0BZTu-.png?_nc_eui2=AeELV7RwXI6W8E1VwgxVuMa88dTwxjBSBT7x1PDGMFIFPhN6IsWih6xqFeyRhqJ_I6Pf5bhu0wVO2O0_xonOcE7Z&quot;); background-position: 0px -37px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
-                    <i id="closing-icon" class="ri-close-fill"></i>
+                    <i onclick="this.parentNode.parentNode.parentNode.remove()" id="closing-icon" class="ri-close-fill"></i>
                 </div>
             </div>
             <div class="card-second">
@@ -53,9 +53,9 @@ function createPostCard() {
             </div>
             <div class="card-image"></div>
             <div class="card-third">
-                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/Ima_pXlhqeL.png?_nc_eui2=AeFt9Rxlh5-AJHSdPF0wHUhKJgpGdu_r-TsmCkZ27-v5O2IPcTOkn8MNph6ImUzK2qcXoIOY6Ul2dRrLCqKG9hsk&quot;); background-position: 0px -760px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Like</button>
-                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/Ima_pXlhqeL.png?_nc_eui2=AeFt9Rxlh5-AJHSdPF0wHUhKJgpGdu_r-TsmCkZ27-v5O2IPcTOkn8MNph6ImUzK2qcXoIOY6Ul2dRrLCqKG9hsk&quot;); background-position: 0px -571px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Comment</button>
-                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/Ima_pXlhqeL.png?_nc_eui2=AeFt9Rxlh5-AJHSdPF0wHUhKJgpGdu_r-TsmCkZ27-v5O2IPcTOkn8MNph6ImUzK2qcXoIOY6Ul2dRrLCqKG9hsk&quot;); background-position: 0px -907px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Share</button>
+                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png&quot;); background-position: 0px -798px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Like</button>
+                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png&quot;); background-position: 0px -588px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Comment</button>
+                <button><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png&quot;); background-position: 0px -924px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Share</button>
             </div>
         `;
 
